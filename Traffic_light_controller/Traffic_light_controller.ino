@@ -17,6 +17,7 @@ void loop() {
   state = digitalRead(push_button);
   
   if(state == 1){//push_button is pressed
+      //Turning on the three leds
       digitalWrite(red,HIGH);
       digitalWrite(yellow,HIGH);
       digitalWrite(green,HIGH);
@@ -24,7 +25,8 @@ void loop() {
    
     }
 
-    else{
+    else{//push_button is not pressed
+      //Turning off the three leds
       digitalWrite(red,LOW);
       digitalWrite(yellow,LOW);
       digitalWrite(green,LOW);
