@@ -16,7 +16,7 @@ void setup() {
 void loop() {
   state = digitalRead(push_button);
   
-  if(state == 1){//push_button is not pressed
+  if(state == 1){//push_button is pressed
       digitalWrite(red,HIGH);
       digitalWrite(yellow,HIGH);
       digitalWrite(green,HIGH);
